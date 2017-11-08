@@ -1,0 +1,22 @@
+@import "fonts";
+//fonts
+$sans:'PT Sans', sans-serif;
+// colors main
+
+//colors text
+
+//sprites
+
+.icon1, .icon3, .icon5, .icon4, .icon2,
+.arr-right-slider, .arr-down, .viber, .arr-down-bot
+{ display: inline-block; background: url('../img/sprite.png') no-repeat; overflow: hidden; text-indent: -9999px; text-align: left; }
+
+.icon1 { background-position: -5px -0px; width: 98px; height: 70px; }
+.icon3 { background-position: -5px -75px; width: 85px; height: 73px; }
+.icon5 { background-position: -5px -153px; width: 81px; height: 51px; }
+.icon4 { background-position: -5px -209px; width: 76px; height: 67px; }
+.icon2 { background-position: -5px -281px; width: 71px; height: 71px; }
+.arr-right-slider { background-position: -5px -357px; width: 62px; height: 86px; }
+.arr-down { background-position: -72px -357px; width: 23px; height: 14px; }
+.viber { background-position: -72px -376px; width: 23px; height: 23px; }
+.arr-down-bot { background-position: -72px -404px; width: 22px; height: 14px; }

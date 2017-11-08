@@ -1,0 +1,176 @@
+@import "../variables";
+
+header {
+  background-color: #010841;
+}
+
+.contentHeader {
+  max-width: 1290px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.wrap-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 90px;
+  height: 100%;
+}
+
+.leftMenu {
+  max-width: 290px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  li {
+    a {
+      color: #ffffff;
+      text-decoration: none;
+      &:hover,
+      &:active,
+      &:focus {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.rightMenu {
+  @extend .leftMenu;
+  max-width: 600px;
+}
+
+.logo--pos {
+  position: relative;
+}
+
+.logo__img {
+  position: relative;
+  top: 30px;
+  max-width: 412px;
+  display: block;
+  margin: 0 auto;
+}
+
+//burger menu
+// Reset all elements to border-box
+*, *::before, *::after {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+// The actual button element is the wrapper for
+// the icon, so the hit areas is larger.
+.btn-wrapper {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  height: 30px;
+  padding: 0;
+  position: relative;
+  width: 30px;
+}
+
+.btn-burger {
+  background: rgba(255, 255, 255, 1);
+  border: 1px solid rgba(255, 255, 255, 0);
+  border-radius: 4px;
+  bottom: 0;
+  font-size: 1px;
+  height: 4px;
+  left: 0;
+  margin: auto 4px;
+  position: absolute;
+  right: 0;
+  text-indent: -9999999px;
+  top: 0;
+  transition: .2s all;
+
+  &::before, &::after {
+    background: white;
+    border-radius: 4px;
+    content: '';
+    height: 4px;
+    left: -1px;
+    margin: auto;
+    position: absolute;
+    transition: all .2s 0s;
+    width: calc(100% + 2px);
+  }
+
+  &::before {
+    top: -8px;
+  }
+
+  &::after {
+    bottom: -8px;
+  }
+
+  &[data-state="on"] {
+    background: rgba(0, 0, 0, 0);
+    border-color: rgba(255, 255, 255, 1);
+    height: 100%;
+    margin: auto;
+
+    &::before, &::after {
+      transition: all .2s .4s;
+    }
+
+    &::after {
+      bottom: 0;
+      top: 0;
+      transform: rotate(45deg);
+    }
+
+    &::before {
+      bottom: 0;
+      top: 0;
+      transform: rotate(-45deg);
+    }
+  }
+}
+
+//---------
+
+//media
+
+@media (max-width: 1100px) {
+  .leftMenu, .rightMenu,
+  .wrap-nav {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 100%;
+  }
+  .leftMenu li a, .rightMenu li a{
+    padding: 20px 0;
+    display: block;
+  }
+  .btn-wrapper{
+    display: block;
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    z-index: 99999;
+  }
+  .logo--pos {
+    position: relative;
+    order: -1;
+    margin-bottom: 40px;
+  }
+  .logo__img{
+    top: 0;
+  }
+  .menu{
+    display: none;
+  }
+}
+@media (max-width: 768px){
+  .logo__img{
+    width: 77%;
+  }
+}

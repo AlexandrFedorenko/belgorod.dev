@@ -1,56 +1,51 @@
-@import "libs";
+@import "normalize";
+@import "variables";
+
+h1,h2,h3,h4,h5,h6,p{margin: 0}
+ul{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+a,button{
+  outline: none;
+}
 
 *::-webkit-input-placeholder{
-  color: #666
-  opacity: 1
+  color: #666;
+  opacity: 1;
 }
 
 
 *:-moz-placeholder{
-  color: #666
-  opacity: 1
+  color: #666;
+  opacity: 1;
 }
 
 
 *::-moz-placeholder{
-  color: #666
-  opacity: 1
+  color: #666;
+  opacity: 1;
 }
 
 
 *:-ms-input-placeholder{
-  color: #666
-  opacity: 1
+  color: #666;
+  opacity: 1;
 }
 .hidden{
   display: none
 }
+body{
+  font-family: $sans;
+  font-weight: 400;
+  font-size: 24px;
+}
 
-html.js .loader {
-  background: none repeat scroll 0 0 #ffffff;
-  bottom: 0;
-  height: 100%;
-  left: 0;
-  position: fixed;
-  right: 0;
-  top: 0;
-  width: 100%;
-  z-index: 9999;
-}
-html.js .loader_inner {
-  background-image: url("../img/preloader.gif");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-color: #fff;
-  height: 60px;
-  width: 60px;
-  margin-top: -30px;
-  margin-left: -30px;
-  left: 50%;
-  top: 50%;
-  position: absolute;
-}
+@import "elements/header";
+@import "pages/index";
+
+
 
 
 
