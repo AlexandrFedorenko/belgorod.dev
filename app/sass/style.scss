@@ -41,7 +41,12 @@ body{
   font-weight: 400;
   font-size: 24px;
 }
-
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+@import "libs";
 @import "elements/header";
 @import "pages/index";
 

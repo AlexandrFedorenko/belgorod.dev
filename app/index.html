@@ -29,7 +29,7 @@
     ========================================================= -->
 
     <link rel="stylesheet" href="css/style.css"/>
-    <script src="libs/modernizer/modernizr-2.8.3.min.js"></script>
+    <!--<script src="libs/modernizer/modernizr-2.8.3.min.js"></script>-->
 </head>
 <body>
 <!--[if lt IE 8]>
@@ -38,7 +38,7 @@
 <![endif]-->
 
 <header>
-    <button class="btn-wrapper">  <span class="btn-burger" data-state="off"></span></button>
+    <button class="btn-wrapper"><span class="btn-burger" data-state="off"></span></button>
     <div class="contentHeader">
         <nav>
             <div class="wrap-nav">
@@ -153,7 +153,196 @@
                 <p class="tableTitleItem tableTitleItem--3">1999 р</p>
                 <p class="tableTitleItem tableTitleItem--4"><a href="#">Заказать</a></p>
             </div>
+            <div class="btnPrices">
+                <a href="#" class="btnPrices__a">Расценки на ремонт</a>
+            </div>
         </div>
+    </div>
+    <div class="block2Wrap block2Wrap--bot">
+        <div class="block2Wrap__right block2Wrap__right--leftBottom">
+            <h2 class="block2Wrap__title">
+                ЦЕНЫ НА ПОПУЛЯРНЫЕ<br>
+                УСЛУГИ ПО РЕМОНТУ ХОЛОДИЛЬНИКОВ
+            </h2>
+            <div class="tableTitle tableTitle--flex">
+                <p class="tableTitleItem">УСЛУГИ</p>
+                <p class="tableTitleItem">СРОКИ</p>
+                <p class="tableTitleItem">ЦЕНА</p>
+                <p class="tableTitleItem">ЗАКАЗАТЬ</p>
+            </div>
+            <div class="table table--flex table--bg">
+                <p class="tableTitleItem tableTitleItem--1">
+                    Установка<br>
+                    комплектующих
+                </p>
+                <p class="tableTitleItem tableTitleItem--2">1 день</p>
+                <p class="tableTitleItem tableTitleItem--3">999 р</p>
+                <p class="tableTitleItem tableTitleItem--4"><a href="#">Заказать</a></p>
+            </div>
+            <div class="table table--flex">
+                <p class="tableTitleItem tableTitleItem--1">
+                    Замена<br>
+                    кабеля питания
+                </p>
+                <p class="tableTitleItem tableTitleItem--2">1 день</p>
+                <p class="tableTitleItem tableTitleItem--3">599 р</p>
+                <p class="tableTitleItem tableTitleItem--4"><a href="#">Заказать</a></p>
+            </div>
+            <div class="table table--flex table--bg">
+                <p class="tableTitleItem tableTitleItem--1">
+                    Замена жесткого<br>
+                    диска
+                </p>
+                <p class="tableTitleItem tableTitleItem--2">1 день</p>
+                <p class="tableTitleItem tableTitleItem--3">2800 р</p>
+                <p class="tableTitleItem tableTitleItem--4"><a href="#">Заказать</a></p>
+            </div>
+            <div class="table table--flex">
+                <p class="tableTitleItem tableTitleItem--1">
+                    Пайка материнской<br>
+                    платы
+                </p>
+                <p class="tableTitleItem tableTitleItem--2">1 день</p>
+                <p class="tableTitleItem tableTitleItem--3">799 р</p>
+                <p class="tableTitleItem tableTitleItem--4"><a href="#">Заказать</a></p>
+            </div>
+            <div class="table table--flex table--bg">
+                <p class="tableTitleItem tableTitleItem--1">
+                    Сборка пк
+                </p>
+                <p class="tableTitleItem tableTitleItem--2">1 день</p>
+                <p class="tableTitleItem tableTitleItem--3">1999 р</p>
+                <p class="tableTitleItem tableTitleItem--4"><a href="#">Заказать</a></p>
+            </div>
+            <div class="btnPrices">
+                <a href="#" class="btnPrices__a">Расценки на ремонт</a>
+            </div>
+        </div>
+        <div class="block2Wrap__left">
+            <a href="#">
+                <img src="img/photo2.jpg" alt="img" class="photo">
+                <span class="photoTitle">РЕМОНТ ХОЛОДИЛЬНИКОВ</span>
+            </a>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="bloc3Wrap">
+        <div class="bloc3Wrap__overlay"></div>
+        <div class="bloc3Content">
+
+            <div class="bloc3ContentWrap">
+                <div class="bloc3ContenLeft">
+                    <p class="bloc3ContenLeft__text">
+                        Оставьте заявку на бесплатный выезд мастера и диагностику поломки
+                    </p>
+                </div>
+                <div class="bloc3ContenMiddle">
+                    <form action="#" method="post">
+                        <div class="title">
+                            <h3 class="title__bl3">ВЫЗОВ МАСТЕРА</h3>
+                        </div>
+                        <div class="formWrap">
+                            <div class="formInp">
+                                <label for="name">1. Напишите свое имя</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="formInp">
+                                <label for="city">2. Выберите район города</label>
+                                <select name="city" id="city" class="select">
+                                    <option value="1"></option>
+                                    <option value="2">Питер</option>
+                                </select>
+                            </div>
+                            <div class="formInp">
+                                <label for="phone">3. Укажите свой номер телефона</label>
+                                <input type="text" id="phone" name="phone" placeholder="+7 (___) ___-__-__" required>
+                            </div>
+                            <div class="sub">
+                                <input type="submit" class="sub__submit" value="Получить помощь мастера">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="bloc3ContenRight">
+                    <p class="bloc3ContenRight__top">
+                        Или просто позвоните
+                        нам по телефонам:
+                    </p>
+                    <a href="tel:+74722770062" class="bloc3ContenRight__a">+7(4722) 77-00-62</a>
+                    <p class="bloc3ContenRight__bot">
+                        Наш адрес:<br>
+                        г. Белгород,<br> ул.
+                        Механизаторов, д.7
+                    </p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+<article>
+    <div class="wrapSlider">
+        <div class="slidWr">
+            <div class="mainSlider">
+                <div><img src="img/logo1.png" alt="img"></div>
+                <div><img src="img/logo3.png" alt="img"></div>
+                <div><img src="img/logo4.png" alt="img"></div>
+                <div><img src="img/logo2.png" alt="img"></div>
+
+                <div><img src="img/logo1.png" alt="img"></div>
+                <div><img src="img/logo2.png" alt="img"></div>
+                <div><img src="img/logo4.png" alt="img"></div>
+                <div><img src="img/logo3.png" alt="img"></div>
+            </div>
+        </div>
+    </div>
+</article>
+<section>
+    <div class="block5">
+        <div class="block5Content">
+            <div class="block5ContentLeft">
+                <img src="img/photo3.jpg" alt="img" class="block5ContentLeft__img">
+            </div>
+            <div class="block5ContentRight">
+                <p class="block5ContentRight__text">
+                    «Белогорье Сервис» предлагает качественный и быстрый ремонт холодильников с бесплатным выездом
+                    специалиста на дом по Белгороду. Выезд мастера на дом по всему Белгородскому р-ну, а также
+                    г.Строитель и п.Маслова Пристань. Мастера сервисного центра осуществляют ремонт холодильного
+                    оборудования и морозильных камер отечественного и импортного производства, а также производят
+                    оперативную диагностику неисправностей, дозаправку фреона и замену любых запчастей.
+                </p>
+                <p class="block5ContentRight__text">
+                    Ремонт холодильников от «Белогорье Сервис» — это скорая помощь в день обращения при любых поломках
+                    по выгодным ценам! Обращайтесь по тел. +7(4722) 77-00-62: +7(962) 307-00-62 или через форму на
+                    сайте!
+                </p>
+            </div>
+        </div>
+        <div class="block5Content">
+            <div class="block5ContentRight">
+                <p class="block5ContentRight__text block5ContentRight__text--left">
+                    «Белогорье Сервис» предлагает качественный и быстрый ремонт холодильников с бесплатным выездом
+                    специалиста на дом по Белгороду. Выезд мастера на дом по всему Белгородскому р-ну, а также
+                    г.Строитель и п.Маслова Пристань. Мастера сервисного центра осуществляют ремонт холодильного
+                    оборудования и морозильных камер отечественного и импортного производства, а также производят
+                    оперативную диагностику неисправностей, дозаправку фреона и замену любых запчастей.
+                </p>
+                <p class="block5ContentRight__text">
+                    Ремонт холодильников от «Белогорье Сервис» — это скорая помощь в день обращения при любых поломках
+                    по выгодным ценам! Обращайтесь по тел. +7(4722) 77-00-62: +7(962) 307-00-62 или через форму на
+                    сайте!
+                </p>
+            </div>
+            <div class="block5ContentLeft block5ContentLeft--order">
+                <img src="img/photo4.jpg" alt="img" class="block5ContentLeft__img">
+            </div>
+        </div>
+    </div>
+</section>
+<section>
+    <div class="block6">
+
     </div>
 </section>
 <div class="hidden"></div>
@@ -168,6 +357,7 @@
 
 
 <script src="libs/jquery/jquery-1.11.1.min.js"></script>
+<script src="libs/slick/slick.js"></script>
 <script src="libs/crros-browser/cross-browser.js"></script>
 <script src="js/custom.js"></script>
 <!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
