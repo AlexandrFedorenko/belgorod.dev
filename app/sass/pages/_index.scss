@@ -437,7 +437,7 @@
   text-align: center;
   font-size: 38px;
   font-weight: 700;
-  padding: 20px 0 80px 0;
+  padding: 20px 0 0 0;
 }
 .butBottom__top{
   text-align: center;
@@ -449,6 +449,9 @@
 .butBottom{
   max-width: 545px;
   margin: 0 auto;
+  position: relative;
+  top: 62px;
+  z-index: 9999;
 }
 .butBottom__title{
   display: flex;
@@ -472,25 +475,25 @@
 .block6ContItem--it1{
   max-width: 425px;
   position: absolute;
-  top: 378px;
+  top: 360px;
   left: 85px;
 }
 .block6ContItem--it2{
   max-width: 340px;
   position: absolute;
-  top: 175px;
-  left: 175px;
+  top: 195px;
+  left: 180px;
 }
 .block6ContItem--it3{
   max-width: 470px;
   position: absolute;
-  top: 207px;
+  top: 220px;
   right: 85px;
 }
 .block6ContItem--it4{
   max-width: 525px;
   position: absolute;
-  bottom: 220px;
+  bottom: 155px;
   right: 0;
 }
 .block6ContItem__top{
@@ -505,6 +508,80 @@
   font-size: 27px;
   font-weight: 400;
 }
+
+// bloc6Bot
+.bloc6Bot{
+  position: relative;
+  background: url("../img/bg3.jpg")no-repeat;
+  background-size: cover;
+  width: 100%;
+  padding: 110px 0;
+  &__overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(27,27,27,.8);
+  }
+}
+.formBot{
+  display: block;
+  position: relative;
+  z-index: 999;
+  max-width: 1308px;
+  width: 100%;
+  border-radius: 10px;
+  background: url("../img/bg-bot-f.png");
+  margin: 0 auto ;
+  padding: 15px;
+}
+.inpBot{
+  width: 319px;
+  height: 58px;
+  box-shadow: -2px 2px 1px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+  background-color: #ffffff;
+  padding-left: 15px;
+  border: none;
+  outline: none;
+}
+.formBotTop{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 35px 0 40px 0;
+}
+.selectBot{
+  max-width: 477px;
+  width: 100%;
+  display: block;
+  height: 57px;
+  border-radius: 10px;
+  padding-left: 15px;
+  color: #616161;
+  background: #ffffff url("../img/arr-bot-2.png")no-repeat 95% center ;
+  outline: none;
+  cursor: pointer;
+}
+.subBot{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  text-decoration: underline;
+  width: 320px;
+  height: 58px;
+  border-radius: 10px;
+  background-color: #ff0000;
+  border: none;
+  outline: none;
+  margin: 0 auto;
+  cursor: pointer;
+  &:hover{
+    text-decoration: none;
+  }
+}
 //media
 @media (max-width: 1530px){
   .formWrap{
@@ -515,6 +592,50 @@
   }
   .wrapSlider:hover .arrRight{
     right: 0;
+  }
+  .block6Cont_img{
+    width: 280px;
+    display: block;
+    margin: 0 auto;
+  }
+  .butBottom__title span{
+    font-size: 24px;
+  }
+  .butBottom__title{
+    max-width: 300px;
+    height: 60px;
+    top: -20px;
+  }
+  .butBottom__top{
+    font-size: 20px;
+  }
+  .block6ContItem__top{
+    font-size: 20px;
+  }
+  .block6ContItem__bot{
+    font-size: 14px;
+  }
+  .block6ContItem--it1{
+    top: 270px;
+    left: 195px;
+  }
+  .block6ContItem--it2{
+    top: 190px;
+    left: 240px;
+  }
+  .wrapBlock6{
+    max-width: 1100px;
+  }
+  .block6ContItem--it3{
+    top: 195px;
+    right: 180px;
+  }
+  .block6ContItem--it4{
+    bottom: 35px;
+    right: 144px;
+  }
+  .wrapBlock6__title{
+    font-size: 30px;
   }
 }
 @media (max-width: 1440px) {
@@ -580,6 +701,32 @@
   .block5ContentLeft--order{
     order: -1;
   }
+  .wrapBlock6 {
+    max-width: 768px;
+  }
+  .block6ContItem--it1{
+    left: 0;
+  }
+  .block6ContItem--it2{
+    left: 60px;
+  }
+  .block6ContItem--it3{
+    right: 0;
+  }
+  .block6ContItem--it4 {
+    bottom: 22px;
+    right: 0;
+  }
+  .inpBot{
+    width: 290px;
+  }
+  .selectBot{
+    min-width: 290px;
+    margin-top: 15px;
+  }
+  .formBotTop{
+    flex-wrap: wrap;
+  }
 }
 @media (max-width: 992px){
   .bloc3ContentWrap{
@@ -597,6 +744,32 @@
   .block5ContentRight__text{
     text-align: center;
     font-size: 16px;
+  }
+}
+@media (max-width: 768px){
+  .block6Cont_img,
+  .butBottom__title{
+    display: none;
+  }
+  .butBottom{
+    top: 0;
+  }
+  .block6ContItem{
+    position: static;
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+  .inpBot{
+    margin-top: 15px;
+  }
+  .block6Cont{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .formBotTop{
+    padding: 0 0 40px 0;
   }
 }
 @media (max-width: 480px) {
@@ -653,6 +826,12 @@
   }
   .select{
     background: #ffffff url(../img/arr-down.png) no-repeat 230px center;
+  }
+  .wrapBlock6__title {
+    font-size: 24px;
+  }
+  .subBot{
+    width: 270px;
   }
 }
 

@@ -1,0 +1,42 @@
+@import "../variables";
+
+footer {
+  background-color: #010841;
+  display: flex;
+  justify-content: flex-end;
+}
+.logo--foot{
+  position: relative;
+}
+.logo__img--foot{
+  position: absolute;
+  top: -75px;
+  max-width: 380px;
+  display: block;
+  margin: 0 auto;
+  left: -214px;
+}
+
+//media
+@media  (max-width: 1240px){
+  .logo__img--foot {
+    top: -70px;
+    max-width: 330px;
+    left: -164px;
+  }
+  footer .menuFoot{
+    position: relative;
+    z-index: 9999;
+  }
+}
+@media  (max-width: 1100px){
+  .logo__img--foot {
+    position: relative;
+    top: -30px;
+    max-width: 330px;
+    left: 0;
+  }
+  .logo--foot{
+    margin-bottom: 0;
+  }
+}

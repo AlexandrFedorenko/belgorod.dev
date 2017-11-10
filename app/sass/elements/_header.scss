@@ -1,12 +1,55 @@
 @import "../variables";
+//to top
+#toTop {
+  z-index: 999999999999;
+  border: 1px solid darkgray;
+  width:50px;
+  height: 50px;
+  border-radius: 100%;
+  background:#f7f7f7;
+  text-align:center;
+  position:fixed;
+  bottom:10px;
+  right:10px;
+  cursor:pointer;
+  display:none;
+  padding-top: 7px;
+  span{
+    background: url("../img/arr-down.png")no-repeat;
+    width: 23px;
+    height: 14px;
+    transform: rotate(180deg);
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
 
+//--------
+.headhesive{
+  position: fixed;
+  width: 100%;
+  transform: translateY(-200%);
+  transition: .5s;
+  z-index: 99999999;
+  .logo__img{
+    max-width: 300px;
+  }
+}
+.headhesive--stick{
+  transform: translateY(0);
+}
+
+//--------
 header {
   background-color: #010841;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .contentHeader {
   max-width: 1290px;
-  margin: 0 auto;
+  width: 100%;
+  margin-right: 161px;
   position: relative;
 }
 
@@ -52,6 +95,7 @@ header {
   max-width: 412px;
   display: block;
   margin: 0 auto;
+  transition: 1s max-width;
 }
 
 //burger menu
@@ -109,7 +153,7 @@ header {
     bottom: -8px;
   }
 
-  &[data-state="on"] {
+  &__cl {
     background: rgba(0, 0, 0, 0);
     border-color: rgba(255, 255, 255, 1);
     height: 100%;
@@ -136,8 +180,19 @@ header {
 //---------
 
 //media
-
+@media (max-width: 1480px){
+  header,
+  footer{
+    display: block;
+  }
+  .contentHeader{
+    margin: 0 auto;
+  }
+}
 @media (max-width: 1100px) {
+  .headhesive{
+    display: none;
+  }
   .leftMenu, .rightMenu,
   .wrap-nav {
     flex-direction: column;

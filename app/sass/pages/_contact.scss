@@ -1,0 +1,138 @@
+@import "../variables";
+
+.blockCallback{
+  max-width: 1920px;
+  margin: 30px auto 45px;
+  background-color: #010841;
+}
+.contTitle__h1{
+  max-width: 1290px;
+  color: #ffffff;
+  font-size: 39px;
+  font-weight: 700;
+  text-align: center;
+  margin: 0 auto;
+  padding: 15px 0 55px 0;
+  display: block;
+}
+.contentCallbackNum{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 486px;
+  width: 100%;
+  height: 103px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  span{
+    color: #010101;
+    font-size: 46px;
+    font-weight: 700;
+  }
+}
+.contentCallbackBut{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 486px;
+  width: 100%;
+  height: 103px;
+  border-radius: 10px;
+  background-color: #ffffff;
+  margin: 0 9px;
+}
+.contentCallbackBut__a{
+  color: #d70210;
+  font-size: 35px;
+  font-weight: 700;
+  text-decoration: underline;
+  &:hover{
+    text-decoration: none;
+  }
+}
+.contentCallbackNum--last span{
+  color: #010841;
+  font-size: 35px;
+}
+.contentCallback{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1490px;
+  width: 100%;
+  margin: 0 auto;
+  padding-bottom: 70px;
+}
+.blCont2Left__graf{
+  li{
+    color: #010101;
+    font-weight: 700;
+    &:first-child{
+      font-size: 27px;
+      font-weight: 400;
+    }
+    i{
+      margin-right: 5px;
+    }
+  }
+}
+.blCont2Right__addres{
+  li{
+    color: #000000;
+    font-size: 27px;
+    font-weight: 400;
+  }
+}
+.blCont2{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1400px;
+  margin: 0 auto 30px;
+}
+.blCont2Middle{
+  a{
+    display: block;
+    img{
+      width: 100%;
+    }
+  }
+}
+//media
+@media   (max-width: 1200px){
+  .contentCallbackNum span,
+  .contentCallbackBut__a{
+    font-size: 28px;
+  }
+}
+@media   (max-width: 1100px){
+  .blCont2{
+    flex-direction: column;
+  }
+  .blCont2Middle{
+    order: -1;
+  }
+  .blCont2Right__addres{
+    padding-top: 25px;
+    text-align: center;
+  }
+}
+@media   (max-width: 992px){
+  .contTitle__h1{
+    font-size: 24px;
+  }
+  .contentCallback{
+    flex-direction: column;
+    padding: 25px 5px 70px;
+  }
+  .contentCallbackBut{
+    margin: 15px auto;
+  }
+}
+@media  (max-width: 480px){
+  .blCont2{
+    padding: 0 20px;
+    text-align: center;
+  }
+
+}
