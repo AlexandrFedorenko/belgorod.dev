@@ -1,13 +1,5 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>
-<html lang="ru" class="lt-ie9 lt-ie8 lt-ie7"><![endif]-->
-<!--[if IE 7]>
-<html lang="ru" class="lt-ie9 lt-ie8"><![endif]-->
-<!--[if IE 8]>
-<html lang="ru" class="lt-ie9"><![endif]-->
-<!--[if gt IE 8]><!-->
-<html class="no-js" lang="">
-<!--<![endif]-->
+<html lang="ru">
 <head>
     <meta charset="utf-8"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
@@ -18,18 +10,7 @@
     <meta name="robots" content="index, follow">
     <!-- /Seo Tags -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <!-- Favicon and Touch Icons
-========================================================= -->
-    <!--<link rel="shortcut icon" href="img/favicon2.ico" type="image/x-icon">-->
-    <!--<link rel="icon" href="img/favicon2.ico" type="image/x-icon">-->
-    <!--<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">-->
-    <!--<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">-->
-    <!--<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">-->
-    <!-- /Favicon
-    ========================================================= -->
-
     <link rel="stylesheet" href="css/style.css"/>
-    <!--<script src="libs/modernizer/modernizr-2.8.3.min.js"></script>-->
 </head>
 <body>
 <!--[if lt IE 8]>
@@ -44,14 +25,14 @@
             <div class="wrap-nav">
                 <ul class="leftMenu menu">
                     <li><a href="#">Главная</a></li>
-                    <li><a href="#">О компании</a></li>
+                    <li><a href="#block5">О компании</a></li>
                 </ul>
                 <div class="logo logo--pos">
                     <a href="#"><img src="img/logo-top.png" alt="logo" class="logo__img"></a>
                 </div>
                 <ul class="rightMenu menu">
-                    <li><a href="#">Услуги</a></li>
-                    <li><a href="#">Контакты</a></li>
+                    <li><a href="page1.html">Услуги</a></li>
+                    <li><a href="contact.html">Контакты</a></li>
                     <li><a href="tel:+74722770062">+7(4722) 77-00-62</a></li>
                 </ul>
             </div>
@@ -92,7 +73,7 @@
 <section>
     <div class="block2Wrap">
         <div class="block2Wrap__left">
-            <a href="#">
+            <a href="page1.html">
                 <img src="img/photo1.jpg" alt="img" class="photo">
                 <span class="photoTitle">РЕМОНТ СТИРАЛЬНЫХ МАШИН</span>
             </a>
@@ -154,7 +135,7 @@
                 <p class="tableTitleItem tableTitleItem--4"><a href="#form-popup" class="popup-with-form">Заказать</a></p>
             </div>
             <div class="btnPrices">
-                <a href="#" class="btnPrices__a">Расценки на ремонт</a>
+                <a href="page1.html" class="btnPrices__a">Расценки на ремонт</a>
             </div>
         </div>
     </div>
@@ -215,11 +196,11 @@
                 <p class="tableTitleItem tableTitleItem--4"><a href="#form-popup" class="popup-with-form">Заказать</a></p>
             </div>
             <div class="btnPrices">
-                <a href="#" class="btnPrices__a">Расценки на ремонт</a>
+                <a href="page2.html" class="btnPrices__a">Расценки на ремонт</a>
             </div>
         </div>
         <div class="block2Wrap__left">
-            <a href="#">
+            <a href="page2.html">
                 <img src="img/photo2.jpg" alt="img" class="photo">
                 <span class="photoTitle">РЕМОНТ ХОЛОДИЛЬНИКОВ</span>
             </a>
@@ -250,7 +231,7 @@
                             <div class="formInp">
                                 <label for="city">2. Выберите район города</label>
                                 <select name="city" id="city" class="select">
-                                    <option value="1"></option>
+                                    <option value="1">Питер</option>
                                     <option value="2">Питер</option>
                                 </select>
                             </div>
@@ -282,6 +263,7 @@
     </div>
 </section>
 <article>
+    <h6 class="hidden">h6</h6>
     <div class="wrapSlider">
         <div class="slidWr">
             <div class="mainSlider">
@@ -299,7 +281,8 @@
     </div>
 </article>
 <section>
-    <div class="block5">
+    <h6 class="hidden">h6</h6>
+    <div id="block5" class="block5">
         <div class="block5Content">
             <div class="block5ContentLeft">
                 <img src="img/photo3.jpg" alt="img" class="block5ContentLeft__img">
@@ -419,14 +402,14 @@
             <div class="wrap-nav">
                 <ul class="leftMenu menuFoot">
                     <li><a href="#">Главная</a></li>
-                    <li><a href="#">О компании</a></li>
+                    <li><a href="#block5">О компании</a></li>
                 </ul>
                 <div class="logo logo--pos logo--foot">
                     <a href="#"><img src="img/logo-foot.png" alt="logo" class="logo__img logo__img--foot"></a>
                 </div>
                 <ul class="rightMenu menuFoot">
-                    <li><a href="#">Услуги</a></li>
-                    <li><a href="#">Контакты</a></li>
+                    <li><a href="page2.html">Услуги</a></li>
+                    <li><a href="contact.html">Контакты</a></li>
                     <li><a href="tel:+74722770062">+7(4722) 77-00-62</a></li>
                 </ul>
             </div>
@@ -443,7 +426,7 @@
             <div class="formInp">
                 <label for="city">2. Выберите район города</label>
                 <select name="city" id="city2" class="select">
-                    <option value="1"></option>
+                    <option value="1">Питер</option>
                     <option value="2">Питер</option>
                 </select>
             </div>
@@ -472,6 +455,7 @@
 <script src="js/headhesive.min.js"></script>
 <script src="libs/Magnific-Popup-master/dist/jquery.magnific-popup.js"></script>
 <script src="js/jquery.maskedinput.js"></script>
+<script src="js/slider.js"></script>
 <script src="js/custom.js"></script>
 <!-- Yandex.Metrika counter --><!-- /Yandex.Metrika counter -->
 <!-- Google Analytics counter --><!-- /Google Analytics counter -->

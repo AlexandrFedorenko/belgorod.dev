@@ -98,6 +98,12 @@
     }
   }
 }
+.map{
+  max-width: 1920px;
+  width: 100%;
+  margin: 0 auto;
+  height: 710px;
+}
 //media
 @media   (max-width: 1200px){
   .contentCallbackNum span,
@@ -133,6 +139,9 @@
   .blCont2{
     padding: 0 20px;
     text-align: center;
+  }
+  .map{
+    height: 400px;
   }
 
 }

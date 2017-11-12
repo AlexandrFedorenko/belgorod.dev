@@ -45,6 +45,7 @@ select {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+
 }
 @import "libs";
 @import "elements/header";
@@ -52,6 +53,8 @@ select {
 @import "elements/popup";
 @import "pages/index";
 @import "pages/contact";
+@import "pages/page1";
+@import "pages/page2";
 
 
 
